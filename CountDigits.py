@@ -1,6 +1,10 @@
-num=input('Enter an number: ')
-cleaned_num=num.replace('-','').replace('.','')
-if cleaned_num.isdigit() :
-    print(f'the number has {len(cleaned_num)} digits')
-else :
-    print('Enter number palasht')
+while True :
+    num=input('Enter a number: ')
+    if not num:
+        print('Enter a numberrr!!')
+        continue
+    cleaned_num=num.replace('-','').replace('.','')
+    if not cleaned_num.isdigit():
+        print('Enter a numberrr!!')
+        continue
+    print(f'The number has {len(cleaned_num)} digits')
